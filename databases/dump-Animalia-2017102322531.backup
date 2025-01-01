@@ -1,0 +1,206 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.6.2
+-- Dumped by pg_dump version 9.6.2
+
+-- Started on 2017-10-23 22:53:58 MST
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 185 (class 1259 OID 116825)
+-- Name: Family; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE "Family" (
+    id integer NOT NULL,
+    description character varying,
+    "idParent" integer
+);
+
+
+ALTER TABLE "Family" OWNER TO postgres;
+
+--
+-- TOC entry 186 (class 1259 OID 116833)
+-- Name: Order; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE "Order" (
+    id integer NOT NULL,
+    description character varying
+);
+
+
+ALTER TABLE "Order" OWNER TO postgres;
+
+--
+-- TOC entry 2392 (class 0 OID 116825)
+-- Dependencies: 185
+-- Data for Name: Family; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO "Family" VALUES (1, 'Theridiidae', NULL);
+INSERT INTO "Family" VALUES (2, 'Achaearanea', NULL);
+INSERT INTO "Family" VALUES (3, 'Theraphosidae', NULL);
+INSERT INTO "Family" VALUES (4, 'Microstigmatidae', NULL);
+INSERT INTO "Family" VALUES (5, 'Zoropsidae', NULL);
+INSERT INTO "Family" VALUES (6, 'Zodariidae', NULL);
+INSERT INTO "Family" VALUES (7, 'Liphistiidae', NULL);
+INSERT INTO "Family" VALUES (8, 'Actinopodidae', NULL);
+INSERT INTO "Family" VALUES (9, 'Antrodiaetidae', NULL);
+INSERT INTO "Family" VALUES (10, 'Atypidae', NULL);
+INSERT INTO "Family" VALUES (11, 'Barychelidae', NULL);
+INSERT INTO "Family" VALUES (12, 'Ctenizidae', NULL);
+INSERT INTO "Family" VALUES (13, 'Cyrtaucheniidae', NULL);
+INSERT INTO "Family" VALUES (14, 'Dipluridae', NULL);
+INSERT INTO "Family" VALUES (15, 'Euctenizidae', NULL);
+INSERT INTO "Family" VALUES (16, 'Hexathelidae', NULL);
+INSERT INTO "Family" VALUES (17, 'Idiopidae', NULL);
+INSERT INTO "Family" VALUES (18, 'Mecicobothriidae', NULL);
+INSERT INTO "Family" VALUES (20, 'Migidae', NULL);
+INSERT INTO "Family" VALUES (21, 'Nemesiidae', NULL);
+INSERT INTO "Family" VALUES (22, 'Paratropididae', NULL);
+INSERT INTO "Family" VALUES (23, 'Theraphosidae', NULL);
+INSERT INTO "Family" VALUES (24, 'Agelenidae', NULL);
+INSERT INTO "Family" VALUES (25, 'Amaurobiidae', NULL);
+INSERT INTO "Family" VALUES (26, 'Ammoxenidae', NULL);
+INSERT INTO "Family" VALUES (27, 'Amphinectidae', NULL);
+INSERT INTO "Family" VALUES (28, 'Anapidae', NULL);
+INSERT INTO "Family" VALUES (29, 'Anyphaenidae', NULL);
+INSERT INTO "Family" VALUES (30, 'Araneidae', NULL);
+INSERT INTO "Family" VALUES (31, 'Archaeidae', NULL);
+INSERT INTO "Family" VALUES (32, 'Austrochilidae', NULL);
+INSERT INTO "Family" VALUES (33, 'Caponiidae', NULL);
+INSERT INTO "Family" VALUES (34, 'Chummidae', NULL);
+INSERT INTO "Family" VALUES (35, 'Cithaeronidae', NULL);
+INSERT INTO "Family" VALUES (36, 'Clubionidae', NULL);
+INSERT INTO "Family" VALUES (37, 'Corinnidae', NULL);
+INSERT INTO "Family" VALUES (38, 'Ctenidae', NULL);
+INSERT INTO "Family" VALUES (39, 'Cyatholipidae', NULL);
+INSERT INTO "Family" VALUES (40, 'Cybaeidae', NULL);
+INSERT INTO "Family" VALUES (41, 'Cycloctenidae', NULL);
+INSERT INTO "Family" VALUES (42, 'Deinopidae', NULL);
+INSERT INTO "Family" VALUES (43, 'Desidae', NULL);
+INSERT INTO "Family" VALUES (44, 'Dictynidae', NULL);
+INSERT INTO "Family" VALUES (45, 'Diguetidae', NULL);
+INSERT INTO "Family" VALUES (46, 'Drymusidae', NULL);
+INSERT INTO "Family" VALUES (47, 'Dysderidae', NULL);
+INSERT INTO "Family" VALUES (48, 'Eresidae', NULL);
+INSERT INTO "Family" VALUES (49, 'Eutichuridae', NULL);
+INSERT INTO "Family" VALUES (50, 'Filistatidae', NULL);
+INSERT INTO "Family" VALUES (51, 'Gallieniellidae', NULL);
+INSERT INTO "Family" VALUES (52, 'Gnaphosidae', NULL);
+INSERT INTO "Family" VALUES (53, 'Gradungulidae', NULL);
+INSERT INTO "Family" VALUES (54, 'Hahniidae', NULL);
+INSERT INTO "Family" VALUES (55, 'Hersiliidae', NULL);
+INSERT INTO "Family" VALUES (56, 'Holarchaeidae', NULL);
+INSERT INTO "Family" VALUES (57, 'Homalonychidae', NULL);
+INSERT INTO "Family" VALUES (58, 'Huttoniidae', NULL);
+INSERT INTO "Family" VALUES (59, 'Hypochilidae', NULL);
+INSERT INTO "Family" VALUES (60, 'Lamponidae', NULL);
+INSERT INTO "Family" VALUES (61, 'Leptonetidae', NULL);
+INSERT INTO "Family" VALUES (62, 'Linyphiidae', NULL);
+INSERT INTO "Family" VALUES (63, 'Liocranidae', NULL);
+INSERT INTO "Family" VALUES (64, 'Lycosidae', NULL);
+INSERT INTO "Family" VALUES (65, 'Malkaridae', NULL);
+INSERT INTO "Family" VALUES (66, 'Mecysmaucheniidae', NULL);
+INSERT INTO "Family" VALUES (67, 'Megadictynidae', NULL);
+INSERT INTO "Family" VALUES (68, 'Mimetidae', NULL);
+INSERT INTO "Family" VALUES (69, 'Miturgidae', NULL);
+INSERT INTO "Family" VALUES (70, 'Mysmenidae', NULL);
+INSERT INTO "Family" VALUES (71, 'Nesticidae', NULL);
+INSERT INTO "Family" VALUES (72, 'Nicodamidae', NULL);
+INSERT INTO "Family" VALUES (73, 'Ochyroceratidae', NULL);
+INSERT INTO "Family" VALUES (74, 'Oecobiidae', NULL);
+INSERT INTO "Family" VALUES (75, 'Oonopidae', NULL);
+INSERT INTO "Family" VALUES (76, 'Orsolobidae', NULL);
+INSERT INTO "Family" VALUES (77, 'Oxyopidae', NULL);
+INSERT INTO "Family" VALUES (78, 'Palpimanidae', NULL);
+INSERT INTO "Family" VALUES (79, 'Pararchaeidae', NULL);
+INSERT INTO "Family" VALUES (80, 'Penestomidae', NULL);
+INSERT INTO "Family" VALUES (81, 'Periegopidae', NULL);
+INSERT INTO "Family" VALUES (82, 'Philodromidae', NULL);
+INSERT INTO "Family" VALUES (83, 'Pholcidae', NULL);
+INSERT INTO "Family" VALUES (84, 'Phrurolithidae', NULL);
+INSERT INTO "Family" VALUES (85, 'Pimoidae', NULL);
+INSERT INTO "Family" VALUES (86, 'Phyxelididae', NULL);
+INSERT INTO "Family" VALUES (87, 'Pisauridae', NULL);
+INSERT INTO "Family" VALUES (88, 'Plectreuridae', NULL);
+INSERT INTO "Family" VALUES (89, 'Prodidomidae', NULL);
+INSERT INTO "Family" VALUES (90, 'Psechridae', NULL);
+INSERT INTO "Family" VALUES (91, 'Salticidae', NULL);
+INSERT INTO "Family" VALUES (92, 'Scytodidae', NULL);
+INSERT INTO "Family" VALUES (93, 'Segestriidae', NULL);
+INSERT INTO "Family" VALUES (94, 'Selenopidae', NULL);
+INSERT INTO "Family" VALUES (95, 'Senoculidae', NULL);
+INSERT INTO "Family" VALUES (96, 'Sicariidae', NULL);
+INSERT INTO "Family" VALUES (97, 'Sinopimoidae', NULL);
+INSERT INTO "Family" VALUES (98, 'Sparassidae', NULL);
+INSERT INTO "Family" VALUES (99, 'Stenochilidae', NULL);
+INSERT INTO "Family" VALUES (100, 'Stiphidiidae', NULL);
+INSERT INTO "Family" VALUES (101, 'Symphytognathidae', NULL);
+INSERT INTO "Family" VALUES (102, 'Synaphridae', NULL);
+INSERT INTO "Family" VALUES (103, 'Telemidae', NULL);
+INSERT INTO "Family" VALUES (104, 'Tetrablemmidae', NULL);
+INSERT INTO "Family" VALUES (105, 'Tetragnathidae', NULL);
+INSERT INTO "Family" VALUES (106, 'Theridiosomatidae', NULL);
+INSERT INTO "Family" VALUES (107, 'Thomisidae', NULL);
+INSERT INTO "Family" VALUES (19, 'Synotaxidae', NULL);
+INSERT INTO "Family" VALUES (108, 'Titanoecidae', NULL);
+INSERT INTO "Family" VALUES (109, 'Trachelidae', NULL);
+INSERT INTO "Family" VALUES (110, 'Trechaleidae', NULL);
+INSERT INTO "Family" VALUES (111, 'Trochanteriidae', NULL);
+INSERT INTO "Family" VALUES (112, 'Trogloraptoridae', NULL);
+INSERT INTO "Family" VALUES (113, 'Udubidae', NULL);
+INSERT INTO "Family" VALUES (114, 'Uloboridae', NULL);
+INSERT INTO "Family" VALUES (115, 'Viridasiidae', NULL);
+
+
+--
+-- TOC entry 2393 (class 0 OID 116833)
+-- Dependencies: 186
+-- Data for Name: Order; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 2274 (class 2606 OID 116837)
+-- Name: Order _Order__pk; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY "Order"
+    ADD CONSTRAINT "_Order__pk" PRIMARY KEY (id);
+
+
+--
+-- TOC entry 2272 (class 2606 OID 116832)
+-- Name: Family family_pk; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY "Family"
+    ADD CONSTRAINT family_pk PRIMARY KEY (id);
+
+
+-- Completed on 2017-10-23 22:54:01 MST
+
+--
+-- PostgreSQL database dump complete
+--
+
